@@ -1,0 +1,65 @@
+/* ===============================
+   FEATURE GRID
+================================ */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 25px;
+}
+
+/* CARD */
+.feature-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+  overflow: hidden;            /* 🔑 IMPORTANT */
+}
+
+/* ===============================
+   IMAGE WRAPPER
+================================ */
+.feature-images {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+  width: 100%;
+}
+
+/* IMAGES */
+.feature-images img {
+  flex: 1 1 0;                 /* 🔑 prevents overflow */
+  max-width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* ===============================
+   TABLET
+================================ */
+@media (max-width: 992px) {
+  .feature-images img {
+    height: 170px;
+  }
+}
+
+/* ===============================
+   MOBILE (STACKED BIG IMAGES)
+================================ */
+@media (max-width: 576px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-images {
+    flex-direction: column;
+  }
+
+  .feature-images img {
+    width: 100%;
+    height: 220px;
+  }
+}

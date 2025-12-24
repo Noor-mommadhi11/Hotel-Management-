@@ -1,0 +1,64 @@
+.update-bg {
+  min-height: 100vh;
+  padding: 40px 20px;
+
+  background: url("https://images.unsplash.com/photo-1501117716987-c8e1ecb210ff?auto=format&fit=crop&w=1100&q=80")
+    center/cover no-repeat;
+  backdrop-filter: blur(3px);
+}
+
+.update-box {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  max-width: 900px;
+  margin: auto;
+}
+
+.update-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Groups */
+.update-box label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.update-box .form-control,
+.update-box .form-select {
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  transition: 0.2s ease-in-out;
+}
+
+.update-box .form-control:focus,
+.update-box .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+}
+
+/* Search Input */
+.search-bar {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Styling */
+.btn-warning {
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.btn-warning:hover {
+  transform: scale(1.08);
+}

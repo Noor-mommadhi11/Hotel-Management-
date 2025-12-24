@@ -1,0 +1,165 @@
+/* ===============================
+   PAGE CONTAINER
+================================= */
+.admin-booking-container {
+  padding: 30px;
+  background: #f4f6f9;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* TITLE */
+.admin-booking-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* ===============================
+   TABLE DESKTOP VIEW
+================================= */
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.booking-table thead {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #ffffff;
+}
+
+.booking-table th {
+  padding: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.booking-table td {
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-table tbody tr:hover {
+  background-color: #f1f5ff;
+}
+
+/* ===============================
+   STATUS DROPDOWN
+================================= */
+.status-select {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.status-select.pending {
+  background: #f1c40f;
+  color: #000;
+}
+
+.status-select.confirmed {
+  background: #2ecc71;
+}
+
+.status-select.cancelled {
+  background: #e74c3c;
+}
+
+/* ===============================
+   CANCEL BUTTON
+================================= */
+.cancel-btn {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   MOBILE CARD VIEW
+================================= */
+@media (max-width: 768px) {
+
+  .admin-booking-container {
+    padding: 15px;
+  }
+
+  /* Hide table header */
+  .booking-table thead {
+    display: none;
+  }
+
+  /* Convert table to cards */
+  .booking-table,
+  .booking-table tbody,
+  .booking-table tr,
+  .booking-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .booking-table tr {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+
+  .booking-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 13px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .booking-table td:last-child {
+    border-bottom: none;
+  }
+
+  /* Label before value */
+  .booking-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #555;
+  }
+
+  .status-select {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .cancel-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+  .admin-booking-container h2 {
+    font-size: 18px;
+  }
+}

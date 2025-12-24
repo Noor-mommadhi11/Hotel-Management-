@@ -1,0 +1,23 @@
+.delete-container {
+  min-height: 100vh;
+  background: #f7f8fa;
+  padding: 20px;
+}
+
+.delete-card {
+  background: #ffffff;
+  width: 100%;
+  border-radius: 15px;
+  padding: 25px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.delete-btn {
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

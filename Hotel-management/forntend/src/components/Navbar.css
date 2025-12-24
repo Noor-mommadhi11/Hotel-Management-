@@ -1,0 +1,203 @@
+/* ===== FIXED NAVBAR SPACER ===== */
+.navbar-spacer {
+  height: 90px;
+}
+
+/* ===== NAVBAR BASE ===== */
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.18);
+  min-height: 82px;
+  padding: 14px 0;
+  z-index: 999;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== BRAND ===== */
+.nav-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #d4af37;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.45);
+  transition: transform 0.4s ease;
+}
+
+.nav-nrks {
+  height: 44px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.55));
+  transition: transform 0.4s ease;
+}
+
+.navbar-brand:hover .nav-logo {
+  transform: rotate(6deg) scale(1.05);
+}
+
+.navbar-brand:hover .nav-nrks {
+  transform: translateX(4px);
+}
+
+/* ===== NAV LINKS ===== */
+.nav-link {
+  color: #f1f1f1 !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d4af37 !important;
+}
+
+/* Gold underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  transition: 0.35s ease;
+}
+
+.nav-link:hover::after,
+.nav-active::after {
+  width: 100%;
+}
+
+.nav-active {
+  color: #d4af37 !important;
+}
+
+/* ===== ACCOUNT BUTTON ===== */
+.account-btn {
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  color: #000;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 7px 24px;
+  border: none;
+  font-size: 0.85rem;
+  transition: all 0.35s ease;
+}
+
+.account-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.5);
+}
+
+/* ===== ADMIN CHIPS ===== */
+.admin-chip {
+  background: rgba(212, 175, 55, 0.15);
+  color: #d4af37;
+  padding: 7px 16px;
+  border-radius: 22px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  transition: all 0.35s ease;
+}
+
+.admin-chip:hover {
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  color: #000;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* ===== LOGOUT ===== */
+.logout-btn {
+  background: linear-gradient(135deg, #8b0000, #b22222);
+  color: #fff;
+  border-radius: 30px;
+  padding: 7px 20px;
+  border: none;
+  font-size: 0.85rem;
+  transition: all 0.35s ease;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(178, 34, 34, 0.6);
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu {
+  background: #0c0c0c;
+  border-radius: 14px;
+  border: 1px solid #222;
+  padding: 8px;
+}
+
+.dropdown-item {
+  color: #ccc;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  color: #000;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .navbar-nav {
+    background: rgba(0, 0, 0, 0.92);
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+}
+.nav-scrolled {
+  background: rgba(0, 0, 0, 0.92);
+  box-shadow: 0 12px 40px rgba(212, 175, 55, 0.35);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+}
+.book-now-btn {
+  text-decoration: none;
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  color: #000;
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 22px rgba(212, 175, 55, 0.45);
+}
+
+.book-now-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.65);
+  color: #000;
+}
+
+/* ===== GOLDEN NAVBAR TOGGLER (HAMBURGER) ===== */
+.navbar-toggler {
+  border: 1px solid rgba(212, 175, 55, 0.7);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.15rem rgba(212, 175, 55, 0.5);
+}
+
+/* Hamburger icon lines */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(212,175,55,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

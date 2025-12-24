@@ -1,0 +1,109 @@
+/* Full-page luxury hotel background (same as register page) */
+
+
+/* body {
+  margin: 0;
+  padding: 0;
+  background: url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1650&q=80")
+    no-repeat center center / cover !important;
+  background-attachment: fixed;
+} */
+
+/* Wrapper to center login box */
+.login-wrapper {
+   margin: 0;
+  padding: 0;
+  background: url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1650&q=80")
+    no-repeat center center / cover !important;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Glass effect login box */
+.login-box {
+  width: 380px;
+  padding: 35px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 500;
+  color: #fff;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+  color: white;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group input:focus {
+  border-color: #aad2ff;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.login-btn:hover {
+  background: #1559b2;
+}
+
+/* Register text */
+.register-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: white;
+}
+
+.register-text span {
+  color: #ffeb3b;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}

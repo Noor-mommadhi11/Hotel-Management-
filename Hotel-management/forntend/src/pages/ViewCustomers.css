@@ -1,0 +1,53 @@
+.view-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.view-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #2d2d2d;
+}
+
+.table-custom {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+}
+
+.table-custom thead {
+  background: linear-gradient(45deg, #4a60ff, #6d8dff);
+  color: white;
+  font-size: 16px;
+}
+
+.table-custom th,
+.table-custom td {
+  padding: 14px;
+  vertical-align: middle;
+}
+
+.table-custom tbody tr:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+}
+
+.no-data {
+  padding: 25px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Background hotel image full screen */
+.view-bg {
+  min-height: 100vh;
+  padding: 40px 0;
+  background: url("https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg") center/cover no-repeat;
+}

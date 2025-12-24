@@ -1,0 +1,188 @@
+.lux-footer {
+  background: radial-gradient(circle at top, #111 0%, #000 60%);
+  color: #ccc;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lux-glow-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, gold, transparent);
+}
+
+/* Container */
+.lux-footer-container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 70px 20px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 50px;
+}
+
+/* Columns */
+.lux-col h4 {
+  color: gold;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.lux-col p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #aaa;
+}
+
+/* Brand */
+.lux-col.brand img {
+  width: 65px;
+  border-radius: 50%;
+  border: 2px solid gold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  margin-bottom: 12px;
+}
+
+.lux-col.brand h3 {
+  color: gold;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+/* Trust badges */
+.lux-trust {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+  font-size: 0.8rem;
+}
+
+.lux-trust span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #111;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #222;
+  color: gold;
+}
+
+/* Links */
+.lux-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lux-col ul li {
+  margin-bottom: 10px;
+}
+
+.lux-col ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: 0.3s;
+}
+
+.lux-col ul li a:hover {
+  color: gold;
+  padding-left: 6px;
+}
+
+/* Contact */
+.lux-col p svg {
+  color: gold;
+}
+
+/* WhatsApp */
+.whatsapp-btn {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, gold, #cfa300);
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.35);
+}
+
+/* Newsletter */
+.newsletter-text {
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.newsletter-box {
+  display: flex;
+  background: #111;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid #222;
+}
+
+.newsletter-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 12px 16px;
+  color: #ccc;
+  outline: none;
+}
+
+.newsletter-box button {
+  background: gold;
+  color: #000;
+  border: none;
+  padding: 0 22px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.newsletter-box button:hover {
+  background: #e6c200;
+}
+
+/* Social */
+.lux-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.lux-social a {
+  width: 36px;
+  height: 36px;
+  background: #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+.lux-social a:hover {
+  background: gold;
+  color: #000;
+  transform: translateY(-4px);
+}
+
+/* Bottom */
+.lux-footer-bottom {
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 0.8rem;
+  color: #777;
+  border-top: 1px solid #222;
+}

@@ -1,0 +1,84 @@
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1522708323590-d24dbb6b0267");
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  border-radius: 18px;
+  margin: 40px 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  color: #eee;
+  font-size: 18px;
+  margin: 20px 0 30px;
+}
+
+.hero-content button {
+  background: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.hero-content button:hover {
+  background: #f3f3f3;
+}
+
+.offer-badge {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+}
+.hero-section {
+  width: 100%;
+  position: relative;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* MOBILE FIX */
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 1.5rem;
+    left: 5%;
+    top: 15%;
+  }
+
+  .hero-sub {
+    font-size: 0.9rem;
+  }
+
+  .offer-card {
+    margin: 10px 0;
+    padding: 12px;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
