@@ -8,7 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import "./AdminDashboard.css";
+import "./adminDashboard.css";
 
 const data = [
   { month: "Jan", bookings: 30 },
