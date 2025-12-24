@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react";
 import hotelData from "../data/hotelData";
 import { useNavigate, Link } from "react-router-dom";
-import "./deals.css";
+import "./Deals.css";
 
 import {
   FaSwimmer,
